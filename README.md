@@ -35,8 +35,8 @@
 
 ## 2. Reads trimming
 ### PRINSEQ-lite
-`prinseq-lite -verbose -fastq filename_clean_1.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_1_good -out_bad filename_1_bad
-prinseq-lite -verbose -fastq filename_clean_2.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_2_good -out_bad filename_2_bad`
+`prinseq-lite -verbose -fastq filename_clean_1.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_1_good -out_bad filename_1_bad`
+`prinseq-lite -verbose -fastq filename_clean_2.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_2_good -out_bad filename_2_bad`
 
 ## 3. Assembly
 ### SPAdes
@@ -52,13 +52,7 @@ prinseq-lite -verbose -fastq filename_clean_2.fq -ns_max_p 10 -min_qual_mean 25 
 
 ## 6. Genome annotation
 ### Prokka
-`prokka --compliant --kingdom Bacteria \
-	--genus Acinetobacter \
-	--species baumannii \
-	--cpus 20 \
-	--outdir outdirname \
-	--prefix filename \
-	filename.fasta`
+`prokka --compliant --kingdom Bacteria --genus Acinetobacter --species baumannii --cpus 20 --outdir outdirname --prefix filename filename.fasta`
 
 ## 7. ST identification and diversity analysis
 ### mlst
