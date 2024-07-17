@@ -35,7 +35,7 @@
 
 ## 2. Reads trimming
 ### PRINSEQ-lite
-`prinseq-lite -verbose -fastq filename_clean_1.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_1_good -out_bad filename_1_bad`
+`prinseq-lite -verbose -fastq filename_clean_1.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_1_good -out_bad filename_1_bad`     
 `prinseq-lite -verbose -fastq filename_clean_2.fq -ns_max_p 10 -min_qual_mean 25 -out_good filename_2_good -out_bad filename_2_bad`
 
 ## 3. Assembly
@@ -56,7 +56,7 @@
 
 ## 7. ST identification and diversity analysis
 ### mlst
-`mlst --scheme abaumannii --minid 100 --mincov 100 --threads 40 filename.fasta >> oxford_mlst.txt`
+`mlst --scheme abaumannii --minid 100 --mincov 100 --threads 40 filename.fasta`
 
 ### diversity analysis
 Diversity indices of ST s were calculated via a custom script available on GitHub (https://github.com/ahmedmagds/rarefaction-curves).
